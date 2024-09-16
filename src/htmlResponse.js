@@ -18,6 +18,7 @@ const getIndex3 = (request, response) => {
   readHTML(request, response, index3);
 };
 
+// general function to handle reading HTML pages
 readHTML = (request, response, filePath) => {
   response.writeHead(200, { 'Content-Type': 'text/html' });
   response.write(filePath);
